@@ -1,13 +1,13 @@
 module.exports = {
-  // "extends": "@istanbuljs/nyc-config-typescript",
-  // "all": true,
-  "clean": true,
+  "extends": "@istanbuljs/nyc-config-typescript",
+  "all": true,
+  // "clean": true,
   "reporter": ["html", "text"],
   "include": [
     "**/*.ts"
   ],
   "exclude": [
-    "**/*.spec.js"
+    "**/*.spec.ts"
   ],
   tempDir: "./coverage"
 }

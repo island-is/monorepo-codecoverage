@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import {lib1} from "@my-workspace/lib1"
+import {lib1} from "../../../../libs/lib1/src/index"
 
 @Injectable()
 export class AppService {
