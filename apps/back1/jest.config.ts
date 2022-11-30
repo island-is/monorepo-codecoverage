@@ -12,10 +12,12 @@ export default {
   transform: {
     '^.+\\.[tj]s$': 'ts-jest',
   },
-  // roots: ["<rootDir>", "<rootDir>/../../libs"],
+  // rootDir: '/Users/petar/src/andes/customers/si/my-workspace',
+  // roots: ["/Users/petar/src/andes/customers/si/my-workspace/apps/back1"],
+  // coverageProvider: 'v8',
   // collectCoverageFrom: [
-  //   '/Users/petar/src/andes/customers/si/my-workspace/apps/**/*.{js,jsx}',
-  //   '/Users/petar/src/andes/customers/si/my-workspace/libs/**/*.{js,jsx}',
+  //   '<rootDir>/**/*.ts',
+  //   // '/Users/petar/src/andes/customers/si/my-workspace/libs/**/*.ts',
   //   '!**/node_modules/**',
   //   '!**/vendor/**',
   // ],
