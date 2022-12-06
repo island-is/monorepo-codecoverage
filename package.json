@@ -14,11 +14,13 @@
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
     "core-js": "^3.6.5",
+    "jest-resolve": "^29.3.1",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "reflect-metadata": "^0.1.13",
     "regenerator-runtime": "0.13.7",
+    "resolve.exports": "^1.1.0",
     "rxjs": "^7.0.0",
     "source-map-support": "^0.5.21",
     "tslib": "^2.3.0"

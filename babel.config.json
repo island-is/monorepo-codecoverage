@@ -1,4 +1,4 @@
 {
   "babelrcRoots": ["*"],
-  "plugins": ["istanbul"]
+  "plugins": ["istanbul", "@babel/plugin-transform-classes"]
 }

@@ -1,10 +1,11 @@
 /* eslint-disable */
 export default {
   displayName: 'back1',
-  preset: './jest.preset.js',
+  // preset: './jest.preset.js',
+  resolver:"./resolver.js",
   globals: {
     'ts-jest': {
-      tsconfig: '<rootDir>/apps/back1/tsconfig.spec.json',
+      tsconfig: 'apps/back1/tsconfig.spec.json',
     },
   },
   testEnvironment: 'node',
@@ -22,5 +23,5 @@ export default {
   //   '!**/vendor/**',
   // ],
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/apps/back1',
+  coverageDirectory: 'coverage/apps/back1',
 };

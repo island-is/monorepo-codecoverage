@@ -10,20 +10,22 @@ module.exports = {
   ...babelConfig,
   // "extends": "@istanbuljs/nyc-config-typescript",
   parserPlugins: parserPlugins.concat('typescript', 'decorators'),
-  // "all": true,
+  "all": true,
   "clean": true,
-  // "esModules": true,
+  "esModules": true,
   "reporter": ["html", "text", "json"],
   "include": [
-    "**/*.ts",
-    "dist/**/*.js"
+    "**/*.{js,ts}",
+    "jest.preset.js",
+    "dist/**/*.{ts,js}"
   ],
   "exclude": [
     "**/*.spec.ts",
-    "**/jest.config.ts",
-    "**/*.d.ts"
+    // "**/*.config.{ts,js}",
+    // "**/*.d.ts"
   ],
-  "instrument": true,
+  // "extension": [],
+  "instrument": false,
   // "skip-full": true,
   // 'excludeNodeModules': false,
   'temp-dir': "./coverage"
