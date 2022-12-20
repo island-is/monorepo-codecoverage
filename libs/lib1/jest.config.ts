@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
   preset: './jest.preset.js',
-  rootDir: '/Users/petar/src/andes/customers/si/my-workspace',
+  rootDir: '../../',
   roots: [__dirname],
   globals: {
     'ts-jest': {
