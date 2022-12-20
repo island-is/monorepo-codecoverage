@@ -5,7 +5,10 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "clean" : "rm -rf coverage",
+    "test-all": "yarn clean ; nx run-many --target=test --all --codeCoverage",
+    "test-back": "yarn clean ; nx run back1:test --codeCoverage"
   },
   "private": true,
   "dependencies": {

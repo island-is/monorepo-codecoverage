@@ -8,7 +8,6 @@ export default {
     },
   },
   testEnvironment: 'node',
-  coverageReporters: ["json", "text"],
   transform: {
     '^.+\\.[tj]s$': 'ts-jest',
   },
@@ -22,5 +21,5 @@ export default {
   //   '!**/vendor/**',
   // ],
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/apps/back1',
+  coverageDirectory: '<rootDir>/coverage/apps/back1',
 };
