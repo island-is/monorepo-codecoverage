@@ -1,6 +1,18 @@
 name: Testing all components
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - 'main'
+      - 'release/**'
+      - 'pre-release/**'
+  workflow_dispatch:
+  create:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - labeled
 
 jobs:
   build:
