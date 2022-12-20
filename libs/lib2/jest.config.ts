@@ -1,15 +1,18 @@
 /* eslint-disable */
 export default {
-  displayName: 'lib2',
-  preset: '../../jest.preset.js',
+  preset: './jest.preset.js',
+  rootDir: '/Users/petar/src/andes/customers/si/my-workspace',
+  roots: [__dirname],
   globals: {
     'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.spec.json',
+      tsconfig: `${__dirname}/tsconfig.spec.json`,
     },
   },
+  testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/libs/lib2',
+  displayName: 'lib2',
+  coverageDirectory: '<rootDir>/coverage/libs/lib2',
 };

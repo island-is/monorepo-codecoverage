@@ -1,11 +1,13 @@
 /* eslint-disable */
 export default {
-  displayName: 'front1',
-  preset: '../../jest.preset.js',
+  preset: './jest.preset.js',
+  rootDir: '/Users/petar/src/andes/customers/si/my-workspace',
+  roots: [__dirname],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nrwl/react/plugins/jest',
-    '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nrwl/next/babel'] }],
+    '^.+\\.[tj]sx?$': ['babel-jest', { root: __dirname, presets: ['@nrwl/next/babel'] }],
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/front1',
+  displayName: 'front1',
+  coverageDirectory: '<rootDir>/coverage/apps/front1',
 };

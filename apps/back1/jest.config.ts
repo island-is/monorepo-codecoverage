@@ -1,18 +1,20 @@
 /* eslint-disable */
 export default {
-  displayName: 'back1',
   preset: './jest.preset.js',
+  rootDir: '/Users/petar/src/andes/customers/si/my-workspace',
+  roots: [__dirname],
   globals: {
     'ts-jest': {
-      tsconfig: '<rootDir>/apps/back1/tsconfig.spec.json',
+      tsconfig: `${__dirname}/tsconfig.spec.json`,
     },
   },
   testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': 'ts-jest',
   },
-  rootDir: '/Users/petar/src/andes/customers/si/my-workspace',
-  roots: ["/Users/petar/src/andes/customers/si/my-workspace/apps/back1"],
+  moduleFileExtensions: ['ts', 'js', 'html'],
+  displayName: 'back1',
+  coverageDirectory: '<rootDir>/coverage/apps/back1',
   // coverageProvider: 'v8',
   // collectCoverageFrom: [
   //   '<rootDir>/**/*.ts',
@@ -20,6 +22,4 @@ export default {
   //   '!**/node_modules/**',
   //   '!**/vendor/**',
   // ],
-  moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '<rootDir>/coverage/apps/back1',
 };
