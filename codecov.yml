@@ -21,3 +21,12 @@ component_management:
       paths:
         - apps/back1/**
         - libs/lib1/**
+        - libs/lib2/**
+coverage:
+  status:
+    project:
+      default:
+        informational: true
+    patch:
+      default:
+        informational: true
