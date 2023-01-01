@@ -1,5 +1,4 @@
 import {Injectable} from '@nestjs/common';
-import {lib1} from "@my-workspace/lib1"
 import {lib2} from "@my-workspace/lib2"
 
 @Injectable()
