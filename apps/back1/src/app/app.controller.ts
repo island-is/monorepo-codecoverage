@@ -10,8 +10,6 @@ export class AppController {
 
   @Get()
   getData() {
-    if (!environment.production)
-      return this.appService.getData();
-    else return {}
+    return this.appService.getData();
   }
 }
