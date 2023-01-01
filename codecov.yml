@@ -1,4 +1,8 @@
-comment: true
+comment:
+  layout: "reach, diff, flags, files, header, footer, feedback"
+  behavior: default
+github_checks: false
+
 component_management:
   default_rules:  # default rules that will be inherited by all components
     statuses:
