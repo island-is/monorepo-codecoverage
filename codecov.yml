@@ -8,6 +8,7 @@ component_management:
     statuses:
       - type: project # in this case every component that doens't have a status defined will have a project type one
         target: auto
+        informational: true
         branches:
           - "!main"
   individual_components:
@@ -21,3 +22,12 @@ component_management:
       paths:
         - apps/back1/**
         - libs/lib1/**
+        - libs/lib2/**
+coverage:
+  status:
+    project:
+      default:
+        informational: true
+    patch:
+      default:
+        informational: true
