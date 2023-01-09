@@ -1,8 +1,9 @@
 /* eslint-disable */
 export default {
-  preset: './jest.preset.js',
-  rootDir: '../../',
-  roots: [__dirname],
+  preset: './../../jest.preset.js',
+  rootDir: '.',
+  resolver:"<rootDir>/../../resolver.js",
+  // roots: [__dirname],
   globals: {
     'ts-jest': {
       tsconfig: `${__dirname}/tsconfig.spec.json`,
@@ -14,7 +15,7 @@ export default {
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
   displayName: 'back1',
-  coverageDirectory: '<rootDir>/coverage/apps/back1',
+  coverageDirectory: '../../coverage/apps/back1',
   // coverageProvider: 'v8',
   // collectCoverageFrom: [
   //   '<rootDir>/**/*.ts',
